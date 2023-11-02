@@ -20,16 +20,16 @@ body{
     padding: 0 15px 0 15px;
 }
 
-/* header */
+/* Header */
 .header{
     background-color: #8209d0;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* left part of header */
+/* Left part of Header */
 .header > .header-left {
     display: flex;
     align-items: center;
@@ -50,4 +50,20 @@ body{
 .header > .header-left img{
     width: 200px;
     padding: 0 75px 0 70px;
+}
+
+/* Right part of Header */
+.header-right {
+    padding-right: 150px;
+}
+.contract-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border: 3px #c26cdf solid;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+.contract-link:hover {
+    background-color: #c26cdf;
 }
