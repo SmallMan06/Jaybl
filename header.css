@@ -30,7 +30,7 @@ body{
 }
 
 /* nav-bar logo */
-.header > .header-left img{
+.logo img{
     width: 200px;
     padding: 0 75px 0 70px;
 }
@@ -44,7 +44,7 @@ body{
     text-decoration: none;
     padding: 10px;
     border: 3px #c26cdf solid;
-    border-radius: 10px;
+    border-radius: 20px;
     transition-duration: 0.3s;
 }
 .contract-link:hover {
@@ -122,6 +122,12 @@ body{
 }
 
 footer {
-    background-color: #3b3c36;
+    background-color: #000;
     height: 500px;
+}
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
 }
