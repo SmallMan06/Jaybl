@@ -101,4 +101,27 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    color: #3b3c36;
+}
+
+.services-container-sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px;
+}
+.service-image img {
+    height: 100px;
+    border-radius: 20px;
+    padding-right: 30px;
+}
+.service-text {
+    text-align: center;
+}
+
+footer {
+    background-color: #3b3c36;
+    height: 500px;
 }
