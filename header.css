@@ -3,6 +3,9 @@ body{
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
+h4 {
+    color: #ffffff;
+}
 /* Header */
 .header{
     background-color: #8209d0;
@@ -22,7 +25,7 @@ body{
 .nav-bar a {
     color: #ffffff;
     text-decoration: none;
-    padding: 0 10px 5px 10px;
+    padding: 5px 10px 5px 10px;
     transition-duration: 0.1s;
 }
 .nav-bar a:hover {
@@ -43,12 +46,12 @@ body{
     color: #ffffff;
     text-decoration: none;
     padding: 10px;
-    border: 3px #c26cdf solid;
+    border: 3px #9847ce solid;
     border-radius: 20px;
     transition-duration: 0.3s;
 }
 .contract-link:hover {
-    background-color: #c26cdf;
+    background-color: #9847ce;
 }
 
 /* intro section */
@@ -73,7 +76,7 @@ body{
 }
 
 .contract-link2 {
-    background-color: #c26cdf;
+    background-color: #9847ce;
     color: #ffffff;
     text-decoration: none;
     font-size: 0.8em;
@@ -121,13 +124,99 @@ body{
     text-align: center;
 }
 
+h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.service-one {
+    height: 300px;
+    background-color: #9847ce;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding-top: 40px;
+}
+
+.service-two {
+    height: 300px;
+    background-color: #3b3c36;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding-top: 40px;
+}
+
+.service-three {
+    height: 300px;
+    background-color: #8209d0;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding-top: 40px;
+}
+.service-left {
+    width: 50%;
+    padding-left: 100px;
+}
+.service-right {
+    padding-right: 100px;
+}
+
+
+
 footer {
     background-color: #000;
-    height: 500px;
-}
-.footer-nav {
+    
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+.footer-left {
     padding-top: 100px;
+}
+
+.footer-right {
+    padding-top: 50px;
+}
+.social-media {
+    padding-right: 250px;
+
+    display: flex;
+}
+.social-img {
+    width: 50px;
+    padding: 0 10px 0 10px;
+}
+
+.footer-center {
+    padding-top: 50px;
+}
+.nav-bar2 a {
+    display: flex;
+
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    transition-duration: 0.1s;
+}
+.nav-bar2 a:hover {
+    color: #9847ce;
+}
+
+.credentials{
+    background-color: #000;
+
+    color: #ffffff;
+    display: flex;
+    align-items: baseline;
+
+    padding-top: 120px;
+    padding-left: 200px;
 }
