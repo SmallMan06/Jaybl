@@ -127,8 +127,14 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    height: 250px;
+    width: 25%;
+    padding: 10px;
 
-    padding: 100px;
+    border: #8209d0 3px solid;
+    border-radius: 20px;
+    box-shadow: black 3px 3px 6px;
 }
 .service-image img {
     height: 100px;
@@ -212,6 +218,10 @@ h4 {
 
     top: 60%;
     left: -20%;
+    transition-duration: 2s;
+}
+.wd-img-2:hover, .wd-img-3:hover {
+    rotate: 10deg;
 }
 .wd-img-3 {
     width: 80%;
@@ -219,6 +229,7 @@ h4 {
 
     top: 40%;
     left: 50%;
+    transition-duration: 1s;
 }
 
 .SEO-img {
