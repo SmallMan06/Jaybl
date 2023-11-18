@@ -176,3 +176,32 @@
     justify-content: center;
     height: 100px;
 }
+
+@media only screen and (max-width: 768px) {
+    .about-service {
+        /* visibility: hidden; */
+        height: 50px;
+        padding: 0;
+    }
+    .service-image img{
+        width: 0;
+        visibility: hidden;
+    }
+    .services-container {
+        flex-direction: column;
+        padding: 170px 0 120px 0;
+    }
+    .services-container-sub{
+        padding: 20px;
+    }
+    .service-one, .service-two, .service-three {
+        margin-top: -500%;
+        font-size: 0.1px;
+    }
+    .wd-img-1, .wd-img-2, .wd-img-3, .PA-img, .SEO-img {
+        width: 0px;
+    }
+    footer {
+        margin-top: 500%;
+    }
+}

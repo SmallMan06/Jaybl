@@ -66,6 +66,7 @@ h4 {
 .header-bg {
     background-color: #8209d0;
     height: 140px;
+    width: 100%;
 }
 
 footer {
@@ -116,9 +117,9 @@ footer {
     color: #ffffff;
     display: flex;
     align-items: baseline;
+    justify-content: center;
 
     padding-top: 120px;
-    padding-left: 200px;
 }
 
 /* general */
@@ -127,4 +128,39 @@ footer {
 }
 .heading {
     height: 100px;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    .header {
+        width: 100%;
+    }
+    .header-left {
+        margin-left: -40px;
+    }
+    .header-right{
+        visibility: hidden;
+        font-size: 0.1px;
+    }
+    .nav-bar a {
+        padding: 2px 5px 1px 5px;
+    }
+    .nav-bar a:hover {
+        border-bottom: 3px solid white;
+    }
+    .footer-left{
+        visibility: hidden;
+        width: 0;
+    }
+    .social-img {
+        width: 40px;
+        padding: 0;
+    }
+    .footer-right {
+        width: 200px;
+    }
+    .credentials {
+        padding-top: 50px;
+    }
 }

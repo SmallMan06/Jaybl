@@ -29,3 +29,12 @@ h1 {
 .service-selection ul {
    padding-left: 100px;
 }
+
+@media only screen and (max-width: 768px) {
+    .service-selection > .webdev-section, .seo-section, .paidads-section {
+        width: 25%;
+    }
+    .service-selection ul {
+        padding: 15px;
+    }
+}
