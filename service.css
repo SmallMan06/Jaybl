@@ -30,11 +30,115 @@ h1 {
    padding-left: 100px;
 }
 
+.service-one, .service-two, .service-three {
+    padding-bottom: 20px;
+}
+
+.service-one p, .service-two p, .service-three p {
+    padding-bottom: 20px;
+}
+
+.service-one {
+    height: 500px;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 40px;
+}
+
+.service-two {
+    height: 500px;
+    background-color: #ffffff;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 40px;
+}
+
+.service-three {
+    height: 500px;
+    background-color: #ffffff;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 40px;
+}
+.service-left {
+    width: 45%;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+.service-right1 {
+    padding-right: 100px;
+    padding-left: 50px;
+    
+}
+.service-right2 {
+    padding-right: 100px;
+    width: 60%;
+    padding-left: 50px;
+}
+
+.wd-img-1 {
+    margin-right: 100px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-image: url(code.jpg);
+    border-radius: 60px;
+}
+.wd-img-2 {
+    width: 50%;
+    position: absolute;
+
+    top: 60%;
+    left: -20%;
+    transition-duration: 2s;
+}
+.wd-img-2:hover, .wd-img-3:hover {
+    rotate: 10deg;
+}
+.wd-img-3 {
+    width: 80%;
+    position: absolute;
+
+    top: 40%;
+    left: 50%;
+    transition-duration: 1s;
+}
+
+.SEO-img {
+    height: 400px;
+    border-radius: 40px 100px 40px 100px;
+}
+.PA-img {
+    height: 400px;
+    width: auto;
+    border-radius: 50%;
+}
+
 @media only screen and (max-width: 768px) {
     .service-selection > .webdev-section, .seo-section, .paidads-section {
         width: 25%;
     }
     .service-selection ul {
         padding: 15px;
+    }
+    .service-one, .service-two, .service-three {
+        margin-top: -500%;
+        font-size: 0.1px;
+    }
+    .wd-img-1, .wd-img-2, .wd-img-3, .PA-img, .SEO-img {
+        width: 0px;
+    }
+    footer {
+        margin-top: 1130%;
     }
 }
