@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Signika+Negative&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="global.css">
 
     <link rel="icon" type="image/x-icon" href="black_logo.jpg">
 </head>
+
 <body>
     <!-- Header -->
     <div class="header">
@@ -36,7 +38,7 @@
             <a class="contract-link" href="services.html">Start Contract</a>
         </div>
     </div>
-    
+
     <div class="header-bg"></div>
 
     <div class="intro-container">
@@ -78,11 +80,68 @@
             </div>
         </div>
     </div>
-    <!-- <div class="learn-service">
-        <div class="contract-link-container">
-            <a style="font-size: 1em;" class="contract-link2" href="services.html">Learn More About Our Services</a>
+
+    <div class="about-section">
+        <div class="section-left">
+            <h1>Website Development</h1>
+            <p></p>
         </div>
-    </div> -->
+        <div class="section-right"></div>
+    </div>
+
+    <div class="service-section">
+        <div class="section-left"></div>
+        <div class="section-right">
+            <h1>Website Development</h1>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <div class="slide-left">
+                    <q>Client Testimonial #1</q>
+                    <p class="author">- Client Name #1</p>
+                </div>
+                <div class="slide-right">
+                    <img src="" alt="client-img #1">
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="slide-left">
+                    <q>Client Testimonial #2</q>
+                    <p class="author">- Client Name #2</p>
+                </div>
+                <div class="slide-right">
+                    <img src="" alt="client-img #2">
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="slide-left">
+                    <q>Client Testimonial #3</q>
+                    <p class="author">- Client Name #3</p>
+                </div>
+                <div class="slide-right">
+                    <img src="" alt="client-img #3">
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-left">
             <a class="logo" href="index.html">
@@ -117,10 +176,44 @@
             <p>example@gmail.com</p>
             <p>+1(123)-456-7890</p>
         </div>
-        
+
     </footer>
     <div class="credentials">
         <p>Jaybl Marketing © 2023</p>
     </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
+
 </html>

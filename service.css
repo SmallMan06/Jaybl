@@ -1,7 +1,10 @@
-
 h1 {
     text-align: center;
     font-size: 3em;
+}
+
+.heading {
+    padding-bottom: 40px;
 }
 
 .service-selection {
@@ -9,13 +12,17 @@ h1 {
     align-items: center;
     justify-content: space-evenly;
 }
+
 .service-selection p {
     font-size: 3em;
 }
-.service-selection > .webdev-section, .seo-section, .paidads-section {
+
+.service-selection>.webdev-section,
+.seo-section,
+.paidads-section {
     text-align: center;
 
-    height: 450px;
+    height: 500px;
     width: 22%;
     padding: 10px;
 
@@ -23,20 +30,52 @@ h1 {
     border-radius: 20px;
     box-shadow: black 3px 3px 6px;
 }
+
 .service-selection li {
     text-align: left;
-}
-.service-selection ul {
-   padding-left: 100px;
+    color: #adacac;
 }
 
-.service-one, .service-two, .service-three {
+.service-selection ul {
+    padding-left: 100px;
+
     padding-bottom: 20px;
 }
 
-.service-one p, .service-two p, .service-three p {
+.service-about {
+    background-color: #3b3c36;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+}
+
+.service-about:hover {
+    background-color: #8209d0;
+}
+
+.service-one,
+.service-two,
+.service-three {
+    padding-bottom: 20px;
+}
+
+.service-one h1,
+.service-two h1,
+.service-three h1 {
+    border-bottom: solid 3px #8209d0;
+    border-: 50%;
+}
+
+.service-one p,
+.service-two p,
+.service-three p {
     padding-bottom: 20px;
     font-size: 0.9em;
+    color: #adacac;
 }
 
 .service-one {
@@ -53,7 +92,7 @@ h1 {
 .service-two {
     height: 500px;
     background-color: #ffffff;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,23 +103,26 @@ h1 {
 .service-three {
     height: 500px;
     background-color: #ffffff;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     padding-top: 40px;
 }
+
 .service-left {
     width: 45%;
     padding-left: 100px;
     padding-right: 50px;
 }
+
 .service-right1 {
     padding-right: 100px;
     padding-left: 50px;
-    
+
 }
+
 .service-right2 {
     padding-right: 100px;
     width: 60%;
@@ -95,6 +137,7 @@ h1 {
     background-image: url(code.jpg);
     border-radius: 60px;
 }
+
 .wd-img-2 {
     width: 50%;
     position: absolute;
@@ -103,9 +146,12 @@ h1 {
     left: -20%;
     transition-duration: 2s;
 }
-.wd-img-2:hover, .wd-img-3:hover {
+
+.wd-img-2:hover,
+.wd-img-3:hover {
     rotate: 10deg;
 }
+
 .wd-img-3 {
     width: 80%;
     position: absolute;
@@ -119,6 +165,7 @@ h1 {
     height: 400px;
     border-radius: 40px 100px 40px 100px;
 }
+
 .PA-img {
     height: 400px;
     width: auto;
@@ -126,19 +173,32 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-    .service-selection > .webdev-section, .seo-section, .paidads-section {
+
+    .service-selection>.webdev-section,
+    .seo-section,
+    .paidads-section {
         width: 25%;
     }
+
     .service-selection ul {
         padding: 15px;
     }
-    .service-one, .service-two, .service-three {
+
+    .service-one,
+    .service-two,
+    .service-three {
         margin-top: -500%;
         font-size: 0.1px;
     }
-    .wd-img-1, .wd-img-2, .wd-img-3, .PA-img, .SEO-img {
+
+    .wd-img-1,
+    .wd-img-2,
+    .wd-img-3,
+    .PA-img,
+    .SEO-img {
         width: 0px;
     }
+
     footer {
         margin-top: 1130%;
     }

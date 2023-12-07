@@ -7,6 +7,7 @@
     height: 570px;
     width: 100%;
 }
+
 .bg-txt {
     color: #ffffff;
     font-size: 1.7em;
@@ -29,16 +30,10 @@
     border-radius: 50px;
     transition-duration: 0.3s;
 }
+
 .contract-link2:hover {
     background-color: #8209d0;
     color: #ffffff;
-}
-
-.intro-shader {
-    background-color: black;
-    opacity: 0.3;
-    height: 570px;
-    margin-top: -570px;
 }
 
 .services-container {
@@ -57,7 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     height: 250px;
     width: 25%;
     padding: 10px;
@@ -66,11 +61,13 @@
     border-radius: 20px;
     box-shadow: black 3px 3px 6px;
 }
+
 .service-image img {
     height: 100px;
     border-radius: 20px;
     border-radius: 50%;
 }
+
 .service-text {
     text-align: center;
 }
@@ -87,22 +84,47 @@
     height: 100px;
 }
 
+.about-section {
+    height: 400px;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+.service-section {
+    height: 400px;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+
+    padding-top: 40px;
+    padding-right: 100px;
+}
+
 @media only screen and (max-width: 768px) {
-    .service-image img{
+    .service-image img {
         width: 80px;
         height: auto;
         /* visibility: hidden; */
     }
+
     .services-container {
         height: 400px;
         flex-direction: column;
         padding: 170px 0 120px 0;
     }
-    .services-container-sub{
+
+    .services-container-sub {
         padding: 20px;
         width: 50%;
         margin-top: 30px;
     }
+
     footer {
         margin-top: 20%;
     }
