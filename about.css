@@ -2,6 +2,17 @@ h1 {
     text-align: center;
     font-size: 3em;
 }
+.about-p-container {
+    padding-left: 200px;
+    text-align: justify;
+}
+.about-p-container2 {
+    display: flex;
+    justify-content: right;
+
+    text-align: justify;
+    padding-right: 200px;
+}
 
 @media only screen and (max-width: 768px) {
     

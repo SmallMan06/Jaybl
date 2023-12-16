@@ -44,12 +44,67 @@
     <div class="heading">
         <h1>Our Mission</h1>
     </div>
-    <p></p>
+    <div class="about-p-container">
+        <p>What we are planning and how it will benifit you.</p>
+        <p>Our Goals</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
     <div class="heading">
         <h1>Our Values</h1>
     </div>
-    <p></p>
+    <div class="about-p-container2">
+        <p>Our values and our interests.</p>
+    </div>
+    
+    <!-- Testimonials -->
+    <div class="testimonials">
+        <div class="slideshow-container">
 
+            <div class="mySlides">
+                <div class="slide-left">
+                    <q>Client Testimonial #1</q>
+                    <p class="author">- Client Name #1</p>
+                </div>
+                <div class="slide-right">
+                    <img src="" alt="client-img #1">
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="slide-left">
+                    <q>Client Testimonial #2</q>
+                    <p class="author">- Client Name #2</p>
+                </div>
+                <div class="slide-right">
+                    <img src="" alt="client-img #2">
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="slide-left">
+                    <q>Client Testimonial #3</q>
+                    <p class="author">- Client Name #3</p>
+                </div>
+                <div class="slide-right">
+                    <img src="" alt="client-img #3">
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
     <footer>
         <div class="footer-left">
             <a class="logo" href="index.html">
@@ -89,6 +144,39 @@
     <div class="credentials">
         <p>Jaybl Marketing © 2023</p>
     </div>
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 
 </html>
