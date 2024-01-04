@@ -22,6 +22,10 @@
 
 .contract-link2 {
     background-color: #9847ce;
+
+    position: relative;
+    top: 50px;
+
     color: #ffffff;
     text-decoration: none;
     font-size: 0.8em;
@@ -29,7 +33,17 @@
     padding: 15px 25px 15px 25px;
     border-radius: 50px;
     transition-duration: 0.3s;
+    animation-name: home-button;
+    animation-duration: 3s;
+    animation-delay: -1s;
 }
+
+@keyframes home-button {
+    0%   {top: 0px; opacity: 0%;}
+    10%  {top: 700px;}
+    70%  {opacity: 0%;}
+    100% {top: 50px; opacity: 100%;}
+  }
 
 .contract-link2:hover {
     background-color: #8209d0;
@@ -46,7 +60,16 @@
     justify-content: space-around;
 
     color: #3b3c36;
+
+    animation-name: service;
+    animation-duration: 3s;
 }
+@keyframes service {
+    0%   {left: 0px; opacity: 0%;}
+    10%  {left: -700px;}
+    70%  {opacity: 0%;}
+    100% {left: 0px; opacity: 100%;}
+  }
 
 .services-container-sub {
     display: flex;
