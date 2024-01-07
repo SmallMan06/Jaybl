@@ -3,12 +3,11 @@ h1 {
     font-size: 3em;
 }
 .contact {
-    background-image: url(contact-background.PNG);
+    /* background-image: url(contact-background.PNG); */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    margin-top: -40px;
 }
 
 .contact-container {
