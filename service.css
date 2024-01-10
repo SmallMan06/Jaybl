@@ -22,7 +22,7 @@ h1 {
 .paidads-section {
     text-align: center;
 
-    height: 500px;
+    height: 600px;
     width: 22%;
     padding: 10px;
 
@@ -37,7 +37,7 @@ h1 {
 }
 
 .service-selection ul {
-    padding-left: 100px;
+    padding-left: 50px;
 
     padding-bottom: 20px;
 }
