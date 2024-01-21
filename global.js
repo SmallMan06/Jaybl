@@ -1,42 +1,33 @@
-;((w,d)=>{
-    let targetElementCollection;
-    const targetElementSelector = '.wpg-reanimate';
-    const inViewClass = 'inview';
-    const defaultTop = '200px';
-    const defaultBottom = '-200px';
+const contract_link = document.querySelectorAll(".contract-link2")
 
-    w.addEventListener('DOMContentLoaded', ()=>{
-        init();
+// const cards = document.querySelectorAll(".contract-link2")
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) observer.unobserve(entry.target)
     })
+}, {
+    threshold: .75,
+})
 
-    const init = () => {
-        targetElementCollection = d.querySelectorAll(targetElementSelector);
-        targetElementCollection.forEach(el => {
-            initElement(el);
-        });
-    }
+contract_link.forEach(item => {
+    observer.observe(item)
+    console.log('observed 1');
+})
 
-    const initElement = element => {
-        const top = element.dataset.ioTop? element.dataset.ioTop : defaultTop;
-        const bottom = element.dataset.ioBottom? element.dataset.ioBottom : defaultBottom;
-        const rootMargin = top + '0px' + bottom + '0px';
+const service_sub = document.querySelectorAll(".services-container")
 
-        let options = {
-            root: null,
-            rootMargin: rootMargin,
-            threshold: 0.01
-        }
+const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) observer.unobserve(entry.target)
+    })
+}, {
+    threshold: .75,
+})
 
-        let observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach((entry) => {
-                console.log(entry);
-                if (entry.isIntersecting) {
-                    element.classList.add(inViewClass);
-                } else {
-                    element.classList.remove(inViewClass);
-                }
-            });
-        }, options);
-        observer.observe(element);
-    }
-})(window, document);
+service_sub.forEach(item2 => {
+    observer2.observe(item2)
+    console.log('observed 2');
+})
