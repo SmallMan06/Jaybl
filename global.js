@@ -9,7 +9,7 @@ const observer = new IntersectionObserver(entries => {
         if (entry.isIntersecting) observer.unobserve(entry.target)
     })
 }, {
-    threshold: .5,
+    threshold: .25,
 })
 cl_2.forEach(item => {
 console.log(item);
