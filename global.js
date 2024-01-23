@@ -1,6 +1,7 @@
-const contract_link = document.querySelectorAll(".contract-link2")
-
-// const cards = document.querySelectorAll(".contract-link2")
+const cl_2 = document.querySelectorAll(".contract-link2")
+const sc = document.querySelectorAll(".services_container")
+const s1 = document.querySelectorAll(".about-section")
+const s2 = document.querySelectorAll(".service-section")
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -8,26 +9,21 @@ const observer = new IntersectionObserver(entries => {
         if (entry.isIntersecting) observer.unobserve(entry.target)
     })
 }, {
-    threshold: .75,
+    threshold: .5,
 })
-
-contract_link.forEach(item => {
+cl_2.forEach(item => {
+console.log(item);
     observer.observe(item)
-    console.log('observed 1');
 })
-
-const service_sub = document.querySelectorAll(".services-container")
-
-const observer2 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        entry.target.classList.toggle("show", entry.isIntersecting)
-        if (entry.isIntersecting) observer.unobserve(entry.target)
-    })
-}, {
-    threshold: .75,
+sc.forEach(item => {
+    console.log(item);
+    observer.observe(item)
 })
-
-service_sub.forEach(item2 => {
-    observer2.observe(item2)
-    console.log('observed 2');
+s1.forEach(item => {
+    console.log(item);
+    observer.observe(item)
+})
+s2.forEach(item => {
+    console.log(item);
+    observer.observe(item)
 })
