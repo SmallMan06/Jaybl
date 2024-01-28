@@ -17,7 +17,7 @@ h1 {
     font-size: 3em;
 }
 
-.service-selection>.webdev-section,
+.webdev-section,
 .seo-section,
 .paidads-section {
     text-align: center;
@@ -28,7 +28,11 @@ h1 {
 
     border: #8209d0 3px solid;
     border-radius: 20px;
-    box-shadow: black 3px 3px 6px;
+    box-shadow: black 3px 3px 6px;    
+    
+    opacity: 0;
+    transform: translateY(200px);
+    transition: 1s;
 }
 
 .service-selection li {
@@ -115,11 +119,19 @@ h1 {
     width: 45%;
     padding-left: 100px;
     padding-right: 50px;
+            
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 1s;
 }
 
 .service-right1 {
     padding-right: 100px;
     padding-left: 50px;
+            
+    transform: translateX(200px);
+    opacity: 0;
+    transition: 1s;
 
 }
 
@@ -127,6 +139,10 @@ h1 {
     padding-right: 100px;
     width: 60%;
     padding-left: 50px;
+            
+    transform: translateX(200px);
+    opacity: 0;
+    transition: 1s;
 }
 
 .wd-img-1 {
@@ -170,6 +186,12 @@ h1 {
     height: 400px;
     width: auto;
     border-radius: 50%;
+}
+
+.show {
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @media only screen and (max-width: 768px) {

@@ -95,6 +95,7 @@
 
 .about-section {
     height: 400px;
+    width: 80%;
 
     display: flex;
     /* align-items: center; */
@@ -110,17 +111,25 @@
 
 .service-section {
     height: 400px;
+    width: 80%;
 
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
 
     padding-top: 40px;
-    padding-right: 100px;
+    padding-left: 100px;
     transform: translateY(200px);
     
     opacity: 0;
     transition: 1s;
+}
+
+.btm-section {
+    width: 300px;
+    height: 90%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .show {

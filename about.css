@@ -5,6 +5,9 @@ h1 {
 .about-p-container {
     padding-left: 200px;
     text-align: justify;
+
+    opacity: 0;
+    transition: 1s;
 }
 .about-p-container2 {
     display: flex;
@@ -12,6 +15,15 @@ h1 {
 
     text-align: justify;
     padding-right: 200px;
+
+    opacity: 0;
+    transition: 1s;
+}
+
+.show {
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @media only screen and (max-width: 768px) {
